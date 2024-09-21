@@ -1,0 +1,284 @@
+
+RiscArchive_v1.elf:     file format elf32-littleriscv
+
+SYMBOL TABLE:
+00000000 l    d  .init	00000000 .init
+000000a0 l    d  .text	00000000 .text
+0000195c l    d  .fini	00000000 .fini
+20000000 l    d  .dalign	00000000 .dalign
+0000195c l    d  .dlalign	00000000 .dlalign
+20000000 l    d  .data	00000000 .data
+20000020 l    d  .bss	00000000 .bss
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .riscv.attributes	00000000 .riscv.attributes
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 
+000000a0 l     F .text	00000016 DelaySysTick
+000000b6 l     F .text	0000002e settone
+2000003a l     O .bss	00000001 toneseq
+20000037 l     O .bss	00000001 volume
+20000038 l     O .bss	00000002 mdy
+2000004c l     O .bss	00000004 mdycount
+20000054 l     O .bss	00000004 count
+000000e4 l     F .text	00000058 usb_setup
+00000000 l     F .init	0000009c InterruptVectorDefault
+00000dda l     F .text	000001e4 SysTick_Handler
+2000003b l     O .bss	00000001 istoneon
+20000036 l     O .bss	00000001 is0Ao1EC
+2000002e l     O .bss	00000002 msel
+20000030 l     O .bss	00000002 mseq
+20000000 l     O .data	00000001 DEF_VOL
+20000008 l     O .data	00000006 Ecarnival4
+20000048 l     O .bss	00000004 keytime0
+20000032 l     O .bss	00000002 kchat01
+20000034 l     O .bss	00000002 kchat00
+2000002c l     O .bss	00000001 last_key0
+20000010 l     O .data	00000006 Ecarnival3
+20000018 l     O .data	00000006 Ecarnival2
+20000050 l     O .bss	00000004 subcount
+20000040 l     O .bss	00000008 ledcount
+20000024 l     O .bss	00000008 tsajoystick
+20000021 l     O .bss	00000001 last_key1
+20000020 l     O .bss	00000001 last_key2
+0000164c l     O .text	0000007a Melody
+000016c8 l     O .text	00000010 Ecarnival1
+000016d8 l     O .text	00000044 Ecarnival5
+0000171c l     O .text	0000002a Ecarnival6
+00001748 l     O .text	00000040 Aoharu1
+00001788 l     O .text	00000010 Aoharu2
+00001798 l     O .text	00000010 Aoharu3
+000017a8 l     O .text	00000010 Aoharu4
+000017b8 l     O .text	00000040 Aoharu5
+000017f8 l     O .text	00000060 descriptor_list
+00001914 l     O .text	00000012 device_descriptor
+000018d8 l     O .text	0000003b config_descriptor
+00001898 l     O .text	0000003f mouse_hid_desc
+00001858 l     O .text	0000003f keyboard_hid_desc
+00001958 l     O .text	00000004 string0
+00001948 l     O .text	00000010 string1
+00001934 l     O .text	00000014 string2
+00001928 l     O .text	0000000a string3
+00000000 l    df *ABS*	00000000 C:\Users\cogkf\AppData\Local\Temp\cc1PlCcy.o
+000013a0 l       .text	00000000 handle_se0_keepalive
+000011ac l       .text	00000000 syncout
+000011b4 l       .text	00000000 preamble_loop
+0000133e l       .text	00000000 done_usb_message
+000011d8 l       .text	00000000 done_preamble
+000011e4 l       .text	00000000 packet_type_loop
+00001230 l       .text	00000000 data_crc
+00001230 l       .text	00000000 is_end_of_byte
+00001238 l       .text	00000000 bit_process
+0000126c l       .text	00000000 handle_one_bit
+00001244 l       .text	00000000 handle_zero_bit
+000012c0 l       .text	00000000 se0_complete
+00001294 l       .text	00000000 handle_bit_stuff
+000012a4 l       .text	00000000 not_is_end_of_byte_and_bit_stuffed
+0000133e l       .text	00000000 done_usb_message_in
+0000136e l       .text	00000000 usb_pid_handle_ack
+00001316 l       .text	00000000 crc_for_tokens_would_be_bad_maybe_data
+000012e8 l       .text	00000000 may_be_a_token
+00001300 l       .text	00000000 yes_check_tokens
+0000139c l       .text	00000000 usb_pid_handle_out
+00001386 l       .text	00000000 usb_pid_handle_setup
+0000134a l       .text	00000000 ret_from_se0
+00001356 l       .text	00000000 interrupt_complete
+00001450 l       .text	00000000 done_poly_check
+00001464 l       .text	00000000 pre_and_tok_send_inner_loop
+00001474 l       .text	00000000 pre_and_tok_send_one_bit
+00001484 l       .text	00000000 pre_and_tok_done_sending_data
+000014f0 l       .text	00000000 no_really_done_sending_data
+00001492 l       .text	00000000 done_poly_check2
+00001494 l       .text	00000000 load_next_byte
+00001498 l       .text	00000000 send_inner_loop
+000014b4 l       .text	00000000 send_zero_bit
+00001528 l       .text	00000000 insert_stuffed_bit
+000014cc l       .text	00000000 cont_after_jump
+000014cc l       .text	00000000 send_end_bit_complete
+000014dc l       .text	00000000 done_sending_data
+00000000 l    df *ABS*	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00001783 l       .debug_info	00000000 
+00000000 l    df *ABS*	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00002591 l       .debug_info	00000000 
+00000000 l    df *ABS*	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+0000321f l       .debug_info	00000000 
+00001400 g       .text	00000000 usb_send_empty
+20000800 g       .data	00000000 __global_pointer$
+000001ae g     F .text	00000002 TIM1_CC_IRQHandler
+000001ae g     F .text	00000002 HardFault_Handler
+000001ae g     F .text	00000002 PVD_IRQHandler
+000001b0 g     F .text	0000000e NMI_Handler
+20000020 g       .bss	00000000 _sbss
+00002591  w      .debug_info	00000000 .hidden RiscArchive_v1.c.014b3fc4
+00000000 g     F .init	0000009c InterruptVector
+000000a0 g       .init	00000000 _einit
+000001ae g     F .text	00000002 SPI1_IRQHandler
+000001ae g     F .text	00000002 AWU_IRQHandler
+00001144 g       .text	00000000 EXTI7_0_IRQHandler
+000010aa g     F .text	00000098 usb_pid_handle_data
+000001ae g     F .text	00000002 DMA1_Channel4_IRQHandler
+000001ae g     F .text	00000002 ADC1_IRQHandler
+200000d4 g       .bss	00000000 _ebss
+000001ae g     F .text	00000002 DMA1_Channel7_IRQHandler
+000001ae g     F .text	00000002 I2C1_EV_IRQHandler
+000001ae g     F .text	00000002 DMA1_Channel6_IRQHandler
+000001ae g     F .text	00000002 RCC_IRQHandler
+000001ae g     F .text	00000002 TIM1_TRG_COM_IRQHandler
+000001ae g     F .text	00000002 DMA1_Channel1_IRQHandler
+000001ae g     F .text	00000002 DefaultIRQHandler
+20000000 g       .dalign	00000000 _data_vma
+0000153c g       .text	00000000 always0
+000001b0 g     F .text	0000000e NMI_RCC_CSS_IRQHandler
+0000321f  w      .debug_info	00000000 .hidden rv003usb.c.d1baa2b9
+00000216 g     F .text	00000bc4 main
+000001ae g     F .text	00000002 DMA1_Channel5_IRQHandler
+000001be g     F .text	00000058 SystemInit
+00000000 g       .init	00000000 _sinit
+000001ae g     F .text	00000002 DMA1_Channel3_IRQHandler
+00000fbe g     F .text	000000ec usb_pid_handle_in
+000001ae g     F .text	00000002 TIM1_UP_IRQHandler
+000001ae g     F .text	00000002 WWDG_IRQHandler
+00001783  w      .debug_info	00000000 .hidden ch32v003fun.c.30c3b10a
+000001ae g     F .text	00000002 TIM2_IRQHandler
+20000800 g       .bss	00000000 _eusrstack
+000001ae g     F .text	00000002 SW_Handler
+000001ae g     F .text	00000002 TIM1_BRK_IRQHandler
+0000140e g       .text	00000000 usb_send_data
+20000020 g       .data	00000000 _edata
+0000195c g       .dlalign	00000000 _data_lma
+20000058 g     O .bss	0000007c rv003usb_internal_data
+000001ae g     F .text	00000002 DMA1_Channel2_IRQHandler
+0000013c g     F .text	00000072 handle_reset
+000001ae g     F .text	00000002 FLASH_IRQHandler
+000001ae g     F .text	00000002 USART1_IRQHandler
+000001ae g     F .text	00000002 I2C1_ER_IRQHandler
+
+
