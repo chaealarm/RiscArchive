@@ -19,7 +19,7 @@ RE Aoharu, Endless Carnival 멜로디를 재생하고, 키보드 매크로(CTRL+
 
 ## 펌웨어 업로드를 위한 부트로더
 * 기본적으로, 배포한 보드는 셀프 플래싱이 가능한 부트로더가 내장되어 있습니다.
-* Board를 별도로 직접 제작하는 등의 경우, rv003usb/Bootloader_RiscArchive/의 바이너리(.hex)를 부트로더 영역(0x1FFFF000)에 플래싱하세요
+* Board를 별도로 직접 제작하는 등의 경우, rv003usb/bootloader-RiscArchive/의 바이너리(.hex)를 부트로더 영역(0x1FFFF000)에 플래싱하세요
 
 
 - 아래 Arduino, ch32v003fun 코딩 후 펌웨어 업로드(플래싱)을 위해서는 부트로더 모드 진입이 필요합니다.
@@ -40,7 +40,6 @@ https://github.com/chaealarm/arduino-wch32v003/releases/download/Package_Json/pa
 * D1(DIO), D3(USB D+), D4(USB D-), D5(USB Pull-UP) 핀은 GPIO로 사용을 권장하지 않습니다. 
 
 ## ch32v003fun을 이용하여 C언어로 코딩하기(Windows만 가능)
-* 참고 : https://github.com/cnlohr/ch32v003fun
 - https://gnutoolchains.com/risc-v/ 에서 RISC-V GCC10 버전 다운로드 및 설치 https://sysprogs.com/getfile/1107/risc-v-gcc10.1.0.exe
 - (위의 '펌웨어 업로드를 위한 부트로더' 참고) examples의 Makefile을 참고하여 make시 minichlink로 펌웨어 업로드 됨(상기한 부트로더 모드로 진입하여야 업로드 가능)
 * 예시) rv003usb/ch32v003fun/examples/blink-RiscArchive/blink.c 를 빌드하여 업로드 하는 경우(해당 펌웨어는 1번버튼을 누르면(C3-GND쇼트시) 녹색 LED(C7)이 점등하는 펌웨어임)
@@ -51,3 +50,6 @@ https://github.com/chaealarm/arduino-wch32v003/releases/download/Package_Json/pa
 * USART(Serial)은 해당 핀들이 USB 핀으로 사용되므로 사용 불가
 * D1(DIO), D3(USB D+), D4(USB D-), D5(USB Pull-UP) 핀은 GPIO로 사용을 권장하지 않습니다.
 * 기존 펌웨어로 복구는 rv003usb/firmware-RiscArchive-v1 폴더에서 make 하면 빌드 및 업로드 됩니다.
+* 참고 Repository
+  - https://github.com/cnlohr/ch32v003fun
+  - https://github.com/cnlohr/rv003usb
