@@ -13,9 +13,9 @@ RISC-V 프로세서(CH32V003F4U6)를 이용한 셀프 플래싱 가능한 개발
 ![image](https://github.com/chaealarm/RiscArchive/assets/12396749/1f0afe7f-4689-4c78-9d91-c1dbc6189adc)
 
 ## 예제 코드
-/rv003usb/Test_RiscArchive에서 README.md를 참고하세요
-
-RE Aoharu, Endless Carnival 멜로디를 재생하고, 키보드 매크로(CTRL+C, CTRL+V)키를 구현하는 예제(rv003usb, ch32v003fun 사용)
+/rv003usb/firmware-RiscArchive-v1
+/rv003usb/firmware-RiscArchive-v2
+(v1: RE Aoharu, Endless Carnival), (v2: Luminous Memory, Unwelcome School) 멜로디를 재생하고, 키보드 매크로(CTRL+C, CTRL+V)키를 구현하는 예제(rv003usb, ch32v003fun 사용)
 
 ## 펌웨어 업로드를 위한 부트로더
 * 기본적으로, 배포한 보드는 셀프 플래싱이 가능한 부트로더가 내장되어 있으며 별도의 부트로더 펌웨어 플래싱이 필요하지 않습니다.
