@@ -9,9 +9,6 @@ RISC-V 프로세서(CH32V003F4U6)를 이용한 셀프 플래싱 가능한 개발
 
 /PCB의 .epro 파일들은 EasyEDA Pro에서 열 수 있습니다.
 
-![image](https://github.com/chaealarm/RiscArchive/assets/12396749/0721092c-2056-44c0-808e-987940667b7d)
-![image](https://github.com/chaealarm/RiscArchive/assets/12396749/1f0afe7f-4689-4c78-9d91-c1dbc6189adc)
-
 ## 예제 코드
 /rv003usb/firmware-RiscArchive-v1
 /rv003usb/firmware-RiscArchive-v2
